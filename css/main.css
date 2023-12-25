@@ -1,0 +1,141 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  margin: 0;
+  --space: 32px;
+  padding: 16px var(--space) var(--space) var(--space);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-actions {
+  margin-left: 2rem;
+}
+
+#time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  background: black;
+  color: white;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn:disabled:hover {
+  background-color: gray;
+  color: white;
+}
+
+.input {
+  width: 4.5rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  margin: 1px;
+  border: 1px solid #837b7b;
+  user-select: none;
+  color: white;
+}
+
+#game {
+  overflow: scroll;
+  align-self: flex-start;
+}
+
+#game.idle .cell {
+  cursor: pointer;
+}
+
+#game.active .cell {
+  cursor: not-allowed;
+}
+
+.cell.alive {
+  background-color: #bd7373;
+}

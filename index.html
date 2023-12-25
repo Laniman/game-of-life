@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div id="root">
+    <span id="time"></span>
+    <div class="controls">
+      <div>
+        <button class="btn" id="start">start</button>
+        <button class="btn" id="stop">stop</button>
+        <button class="btn" id="tick">tick</button>
+      </div>
+      <div class="board-actions">
+        <input class="input" type="number" id="width" name="width" min="1">
+        <input class="input" type="number" id="height" name="height" min="1">
+        <button class="btn" id="random">random</button>
+        <button class="btn" id="clear">clear</button>
+      </div>
+    </div>
+
+    <div>
+    <div id="game"></div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
