@@ -40,13 +40,8 @@ class GameOfLife {
         // })
 		this.prepareBoard();
 		this.randomizeBoard();
-		// this.controller = new AbortController();
-		// this.render();
         this.renderFrame();
 		this.updateUI();
-		// this.controller.abort();
-		// clearTimeout(this.timeoutId);
-		// this.controller = new AbortController();
 	}
 
 	prepareBoard() {
@@ -172,29 +167,13 @@ class GameOfLife {
 
 	render() {
 		if (this.controller.signal.aborted) return;
+
         this.renderFrame();
-		// const t0 = performance.now();
-		// if (this.isRunning) {
-		// 	this.tick();
-		// }
-        //
-		// this.for((cell, ui) => {
-		// 	if (cell === 1) {
-		// 		ui.classList.add("alive");
-		// 	} else {
-		// 		ui.classList.remove("alive");
-		// 	}
-		// });
-        //
-		// const t1 = performance.now();
 
         this.timeoutId = setTimeout(
 			() => requestAnimationFrame(() => this.render()),
 			1000 / this.fps,
 		);
-
-		// this.time = t1 - t0;
-		// if (this.timeCb) this.timeCb(this.time);
 	}
 
 	start() {
