@@ -109,12 +109,31 @@ body {
     font-weight: bold;
 }
 
+label {
+    color: white;
+}
+
+.field-group {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.field-group label {
+    font-size: 14px;
+}
+
+.field-group .input {
+    height: 1rem;
+}
+
 .row {
     display: flex;
 }
 
 .cell {
     display: flex;
+    flex-shrink: 0;
     width: 8px;
     height: 8px;
     margin: 1px;
@@ -123,8 +142,15 @@ body {
     color: white;
 }
 
+#game-container {
+    width: 800px;
+    height: 600px;
+    overflow: auto;
+    position: relative;
+}
+
 #game {
-    overflow: scroll;
+    will-change: transform;
     align-self: flex-start;
 }
 

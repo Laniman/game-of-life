@@ -20,28 +20,38 @@
                     <button class="btn" id="start">start</button>
                     <button class="btn" id="stop">stop</button>
                     <button class="btn" id="tick">tick</button>
+                    <div class="field-group">
+                        <label for="virtual">Virtual rendering</label>
+                        <input type="checkbox" name="virtual" id="virtual" />
+                    </div>
                 </div>
                 <div class="board-actions">
-                    <input
-                        class="input"
-                        type="number"
-                        id="width"
-                        name="width"
-                        min="1"
-                    />
-                    <input
-                        class="input"
-                        type="number"
-                        id="height"
-                        name="height"
-                        min="1"
-                    />
+                    <div class="field-group">
+                        <label for="width">Width:</label>
+                        <input
+                            class="input"
+                            type="number"
+                            id="width"
+                            name="width"
+                            min="1"
+                        />
+                    </div>
+                    <div class="field-group">
+                        <label for="height">Height:</label>
+                        <input
+                            class="input"
+                            type="number"
+                            id="height"
+                            name="height"
+                            min="1"
+                        />
+                    </div>
                     <button class="btn" id="random">random</button>
                     <button class="btn" id="clear">clear</button>
                 </div>
             </div>
 
-            <div>
+            <div id="game-container">
                 <div id="game"></div>
             </div>
         </div>
