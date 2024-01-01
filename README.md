@@ -1,5 +1,7 @@
 # Game of Life
 
+[<img width="600" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/17131057/293606522-678f5e94-419e-4af6-98cf-ed171a9bbf7e.png">](https://laniman.github.io/game-of-life/)
+
 ## Overview
 
 This is a simple implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life), a cellular automaton devised by the mathematician John Conway. The game is played on a grid of cells, each of which can be in one of two states: alive or dead. The game evolves through generations based on a set of rules.
